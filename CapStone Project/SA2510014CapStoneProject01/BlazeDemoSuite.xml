@@ -1,0 +1,17 @@
+
+
+<suite name="Suite">
+	<test name="smoke TestD ">
+		<groups>
+			<run>
+				<include name="negative"></include>				
+			</run>
+		</groups>
+		<classes>
+			<class name="com.blazedemo.tests.HomePageTest" />
+			<class name="com.blazedemo.tests.ReservePageTest" />
+			<class name="com.blazedemo.tests.PurchasePageTest" />
+			<class name="com.blazedemo.tests.NegativeTest" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [blazeDemo]">
+  <test thread-count="5" name="Smoke Tests(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.blazedemo.tests.HomePageTest">
+        <methods>
+          <include name="TC02_verifyCitiesDropdown"/>
+          <include name="TC01_verifyHomePageLoaded"/>
+        </methods>
+      </class> <!-- com.blazedemo.tests.HomePageTest -->
+    </classes>
+  </test> <!-- Smoke Tests(failed) -->
+</suite> <!-- Failed suite [blazeDemo] -->

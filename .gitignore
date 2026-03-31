@@ -1,0 +1,14 @@
+# Eclipse
+.metadata/
+*.log
+*.lock
+~$*.xlsx
+
+# Java
+bin/
+target/
+*.class
+
+# OS junk
+.DS_Store
+Thumbs.db
