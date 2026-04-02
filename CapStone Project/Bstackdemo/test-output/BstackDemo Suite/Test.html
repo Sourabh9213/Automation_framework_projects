@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Apr 01 11:54:42 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>106 seconds (106837 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.Bstackdemo.tests.CartTests.TC07_removeItem()'><b>TC07_removeItem</b><br>Test class: com.Bstackdemo.tests.CartTests</td>
+<td></td>
+<td>11</td>
+<td>com.Bstackdemo.tests.CartTests@6f03482</td></tr>
+<tr>
+<td title='com.Bstackdemo.tests.CartTests.TC08_verifyCartItems()'><b>TC08_verifyCartItems</b><br>Test class: com.Bstackdemo.tests.CartTests</td>
+<td></td>
+<td>0</td>
+<td>com.Bstackdemo.tests.CartTests@6f03482</td></tr>
+<tr>
+<td title='com.Bstackdemo.tests.LoginTests.TC05_searchBox()'><b>TC05_searchBox</b><br>Test class: com.Bstackdemo.tests.LoginTests</td>
+<td></td>
+<td>0</td>
+<td>com.Bstackdemo.tests.LoginTests@179ece50</td></tr>
+<tr>
+<td title='com.Bstackdemo.tests.CheckoutTests.TC10_checkoutWithoutItems()'><b>TC10_checkoutWithoutItems</b><br>Test class: com.Bstackdemo.tests.CheckoutTests</td>
+<td></td>
+<td>1</td>
+<td>com.Bstackdemo.tests.CheckoutTests@411f53a0</td></tr>
+<tr>
+<td title='com.Bstackdemo.tests.CartTests.TC05_searchBox()'><b>TC05_searchBox</b><br>Test class: com.Bstackdemo.tests.CartTests</td>
+<td></td>
+<td>0</td>
+<td>com.Bstackdemo.tests.CartTests@6f03482</td></tr>
+<tr>
+<td title='com.Bstackdemo.tests.CartTests.TC06_addMultipleItems()'><b>TC06_addMultipleItems</b><br>Test class: com.Bstackdemo.tests.CartTests</td>
+<td></td>
+<td>1</td>
+<td>com.Bstackdemo.tests.CartTests@6f03482</td></tr>
+<tr>
+<td title='com.Bstackdemo.tests.LoginTests.TC01_validLogin()'><b>TC01_validLogin</b><br>Test class: com.Bstackdemo.tests.LoginTests</td>
+<td></td>
+<td>0</td>
+<td>com.Bstackdemo.tests.LoginTests@179ece50</td></tr>
+<tr>
+<td title='com.Bstackdemo.tests.LoginTests.TC06_addMultipleItems()'><b>TC06_addMultipleItems</b><br>Test class: com.Bstackdemo.tests.LoginTests</td>
+<td></td>
+<td>1</td>
+<td>com.Bstackdemo.tests.LoginTests@179ece50</td></tr>
+<tr>
+<td title='com.Bstackdemo.tests.CheckoutTests.TC09_validCheckout()'><b>TC09_validCheckout</b><br>Test class: com.Bstackdemo.tests.CheckoutTests</td>
+<td></td>
+<td>1</td>
+<td>com.Bstackdemo.tests.CheckoutTests@411f53a0</td></tr>
+<tr>
+<td title='com.Bstackdemo.tests.LoginTests.TC08_validCheckout()'><b>TC08_validCheckout</b><br>Test class: com.Bstackdemo.tests.LoginTests</td>
+<td></td>
+<td>1</td>
+<td>com.Bstackdemo.tests.LoginTests@179ece50</td></tr>
+<tr>
+<td title='com.Bstackdemo.tests.LoginTests.TC07_removeItem()'><b>TC07_removeItem</b><br>Test class: com.Bstackdemo.tests.LoginTests</td>
+<td></td>
+<td>11</td>
+<td>com.Bstackdemo.tests.LoginTests@179ece50</td></tr>
+<tr>
+<td title='com.Bstackdemo.tests.CartTests.TC04_addSingleItem()'><b>TC04_addSingleItem</b><br>Test class: com.Bstackdemo.tests.CartTests</td>
+<td></td>
+<td>1</td>
+<td>com.Bstackdemo.tests.CartTests@6f03482</td></tr>
+<tr>
+<td title='com.Bstackdemo.tests.LoginTests.TC04_addSingleItem()'><b>TC04_addSingleItem</b><br>Test class: com.Bstackdemo.tests.LoginTests</td>
+<td></td>
+<td>1</td>
+<td>com.Bstackdemo.tests.LoginTests@179ece50</td></tr>
+<tr>
+<td title='com.Bstackdemo.tests.LoginTests.TC09_verifyCartItems()'><b>TC09_verifyCartItems</b><br>Test class: com.Bstackdemo.tests.LoginTests</td>
+<td></td>
+<td>0</td>
+<td>com.Bstackdemo.tests.LoginTests@179ece50</td></tr>
+<tr>
+<td title='com.Bstackdemo.tests.LoginTests.TC10_checkoutWithoutItems()'><b>TC10_checkoutWithoutItems</b><br>Test class: com.Bstackdemo.tests.LoginTests</td>
+<td></td>
+<td>1</td>
+<td>com.Bstackdemo.tests.LoginTests@179ece50</td></tr>
+</table><p>
+</body>
+</html>

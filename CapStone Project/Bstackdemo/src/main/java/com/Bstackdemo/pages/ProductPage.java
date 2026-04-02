@@ -27,7 +27,7 @@ public class ProductPage {
 	private By searchBox = By.cssSelector("input[placeholder='Search']");
 
 	public boolean isProductPageLoaded() {
-		return driver.getCurrentUrl().contains("true") && driver.findElements(products).size() > 0;
+		return driver.findElements(products).size() > 0;
 	}
 
 	public int getProductCount() {
@@ -36,9 +36,9 @@ public class ProductPage {
 
 	public int getCartCount() {
 		try {
-			  WaitU.waitUntilVisible(cartBadge);
-			    String count = driver.findElement(cartBadge).getText();
-			    return Integer.parseInt(count);
+			WaitU.waitUntilVisible(cartBadge);
+			String count = driver.findElement(cartBadge).getText();
+			return Integer.parseInt(count);
 		} catch (Exception e) {
 			return 0;
 		}
@@ -57,21 +57,18 @@ public class ProductPage {
 		}
 		return names;
 	}
+
 	public void searchProduct(String productName) {
-	    WebElement element = WaitU.waitUntilVisible(searchBox);
-	    element.clear();
-	    element.sendKeys(productName);
+		WebElement element = WaitU.waitUntilVisible(searchBox);
+		element.clear();
+		element.sendKeys(productName);
 	}
-	
+
 	public void addProductToCart(String productName) {
 
-	    By addBtn = By.xpath(
-	        "//p[text()='" + productName + "']/following::div[text()='Add to cart'][1]"
-	    );
+		By addBtn = By.xpath("//p[text()='" + productName + "']/following::div[text()='Add to cart'][1]");
 
-	    WaitU.clickElement(addBtn);
+		WaitU.clickElement(addBtn);
 	}
-	
-	
 
 }

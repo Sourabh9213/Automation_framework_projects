@@ -49,7 +49,10 @@ public class CartPage {
 	}
 
 	public void removeFirstItem() {
-		driver.findElements(removeBtn).get(0).click();
+		List<WebElement> items = driver.findElements(removeBtn);
+		if (!items.isEmpty()) {
+			items.get(0).click();
+		}
 	}
 
 	public void removeItem(String productName) {
@@ -74,8 +77,13 @@ public class CartPage {
 	public boolean isChekoutBtnAvailable() {
 		return isCheckoutBtnAvailable();
 	}
+
 	public void clickCheckout() {
 		WaitU.waitUntilClickable(checkoutBtn).click();
+	}
+
+	public boolean isCartEmpty() {
+		return getCartItemCount() == 0;
 	}
 
 	public void closeCart() {

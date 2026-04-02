@@ -5,13 +5,9 @@
     <classes>
       <class name="com.Bstackdemo.tests.BstackTests">
         <methods>
-          <include name="TC10_checkoutWithoutItems"/>
-          <include name="TC06_addMultipleItems"/>
-          <include name="TC07_removeItem"/>
+          <include name="TC09_verifyCartItems"/>
           <include name="setup"/>
-          <include name="LogOut"/>
           <include name="teardown"/>
-          <include name="init"/>
         </methods>
       </class> <!-- com.Bstackdemo.tests.BstackTests -->
     </classes>

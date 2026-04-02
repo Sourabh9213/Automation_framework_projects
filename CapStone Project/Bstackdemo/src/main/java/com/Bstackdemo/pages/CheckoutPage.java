@@ -63,8 +63,8 @@ public class CheckoutPage {
 	public void clickSubmit() {
 		WaitU.waitUntilClickable(submitBtn).click();
 	}
-	
-	public Boolean Order() {
+
+	public boolean isOrderPlaced() {
 		return driver.findElement(orderNumber).isDisplayed();
 	}
 

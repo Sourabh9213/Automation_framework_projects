@@ -30,10 +30,21 @@ public class LoginPage {
 	private By getPasswordOption(String password) {
 		return By.xpath("//div[text()='" + password + "']");
 	}
+	
+	
 
 	public void clickSignIn() {
 		WaitU.waitUntilVisible(signInLink).click();
 	}
+	
+	public boolean isUserLoggedIn() {
+	    try {
+	        return WaitU.waitUntilVisible(logoutBtn).isDisplayed();
+	    } catch (Exception e) {
+	        return false;
+	    }
+	}
+	
 	public void LogOut() {
 		// Defensive logout: if the logout/signin element is visible, click it; otherwise no-op.
 		try {
