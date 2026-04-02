@@ -2,6 +2,7 @@ package com.CRM.Tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import com.CRM.pages.HomePage;
@@ -19,7 +20,11 @@ public class BaseClass {
 
 		hp = new HomePage(driver);
 		lp = new LoginPage(driver);
-
+	}
+	
+	@AfterTest
+	public void teardown() {
+		driver.quit();
 	}
 
 }

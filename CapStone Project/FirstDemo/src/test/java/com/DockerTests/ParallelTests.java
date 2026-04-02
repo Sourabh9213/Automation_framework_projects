@@ -25,19 +25,19 @@ public class ParallelTests {
 		if (bname.equalsIgnoreCase("chrome")) {
 			ChromeOptions options = new ChromeOptions();
 			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
-			driver.get("https://www.google.com");
+			driver.get("https://www.amazon.in");
 			System.out.println("Launching Chrome");
 
 		} else if (bname.equalsIgnoreCase("firefox")) {
 			FirefoxOptions options = new FirefoxOptions();
-			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
-			driver.get("https://www.google.com");
+			driver = new RemoteWebDriver(new URL("http://localhost:4444"), options);
+			driver.get("https://www.amazon.in");
 			System.out.println("Launching Firefox");
 
 		} else if (bname.equalsIgnoreCase("edge")) {
 			EdgeOptions options = new EdgeOptions();
-			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
-			driver.get("https://www.google.com");
+			driver = new RemoteWebDriver(new URL("http://localhost:4444"), options);
+			driver.get("https://www.amazon.in");
 			System.out.println("Launching MicrosoftEdge");
 		}
 	}

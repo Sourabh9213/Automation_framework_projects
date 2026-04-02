@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-02T09:36:05 IST" name="Suite" finished-at="2026-04-02T09:36:28 IST" duration-ms="23369">
+  <suite started-at="2026-04-02T09:54:48 IST" name="Suite" finished-at="2026-04-02T09:55:11 IST" duration-ms="23941">
     <groups>
     </groups>
-    <test started-at="2026-04-02T09:36:05 IST" name="ChromeTest" finished-at="2026-04-02T09:36:28 IST" duration-ms="22614">
+    <test started-at="2026-04-02T09:54:48 IST" name="ChromeTest" finished-at="2026-04-02T09:55:10 IST" duration-ms="22149">
       <class name="com.DockerTests.ParallelTests">
-        <test-method signature="setup(java.lang.String)[pri:0, instance:com.DockerTests.ParallelTests@245b4bdc]" started-at="2026-04-02T09:36:05 IST" name="setup" finished-at="2026-04-02T09:36:07 IST" duration-ms="2484" status="PASS">
+        <test-method signature="setup(java.lang.String)[pri:0, instance:com.DockerTests.ParallelTests@245b4bdc]" started-at="2026-04-02T09:54:48 IST" name="setup" finished-at="2026-04-02T09:54:50 IST" duration-ms="2014" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.DockerTests.ParallelTests@245b4bdc]" started-at="2026-04-02T09:36:07 IST" name="teardown" finished-at="2026-04-02T09:36:28 IST" duration-ms="20104" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.DockerTests.ParallelTests@245b4bdc]" started-at="2026-04-02T09:54:50 IST" name="teardown" finished-at="2026-04-02T09:55:10 IST" duration-ms="20110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.DockerTests.ParallelTests -->
     </test> <!-- ChromeTest -->
-    <test started-at="2026-04-02T09:36:05 IST" name="MicroSoftEdgeTest" finished-at="2026-04-02T09:36:28 IST" duration-ms="23103">
+    <test started-at="2026-04-02T09:54:48 IST" name="MicroSoftEdgeTest" finished-at="2026-04-02T09:55:10 IST" duration-ms="22303">
       <class name="com.DockerTests.ParallelTests">
-        <test-method signature="setup(java.lang.String)[pri:0, instance:com.DockerTests.ParallelTests@74235045]" started-at="2026-04-02T09:36:05 IST" name="setup" finished-at="2026-04-02T09:36:08 IST" duration-ms="2995" status="PASS">
+        <test-method signature="setup(java.lang.String)[pri:0, instance:com.DockerTests.ParallelTests@74235045]" started-at="2026-04-02T09:54:48 IST" name="setup" finished-at="2026-04-02T09:54:50 IST" duration-ms="2180" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,15 +37,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.DockerTests.ParallelTests@74235045]" started-at="2026-04-02T09:36:08 IST" name="teardown" finished-at="2026-04-02T09:36:28 IST" duration-ms="20086" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.DockerTests.ParallelTests@74235045]" started-at="2026-04-02T09:54:50 IST" name="teardown" finished-at="2026-04-02T09:55:10 IST" duration-ms="20101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.DockerTests.ParallelTests -->
     </test> <!-- MicroSoftEdgeTest -->
-    <test started-at="2026-04-02T09:36:05 IST" name="FirefoxTest" finished-at="2026-04-02T09:36:28 IST" duration-ms="23369">
+    <test started-at="2026-04-02T09:54:48 IST" name="FirefoxTest" finished-at="2026-04-02T09:55:11 IST" duration-ms="23941">
       <class name="com.DockerTests.ParallelTests">
-        <test-method signature="setup(java.lang.String)[pri:0, instance:com.DockerTests.ParallelTests@5fe94a96]" started-at="2026-04-02T09:36:05 IST" name="setup" finished-at="2026-04-02T09:36:08 IST" duration-ms="2783" status="PASS">
+        <test-method signature="setup(java.lang.String)[pri:0, instance:com.DockerTests.ParallelTests@5fe94a96]" started-at="2026-04-02T09:54:48 IST" name="setup" finished-at="2026-04-02T09:54:51 IST" duration-ms="3332" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,7 +56,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.DockerTests.ParallelTests@5fe94a96]" started-at="2026-04-02T09:36:08 IST" name="teardown" finished-at="2026-04-02T09:36:28 IST" duration-ms="20563" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.DockerTests.ParallelTests@5fe94a96]" started-at="2026-04-02T09:54:51 IST" name="teardown" finished-at="2026-04-02T09:55:11 IST" duration-ms="20586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
