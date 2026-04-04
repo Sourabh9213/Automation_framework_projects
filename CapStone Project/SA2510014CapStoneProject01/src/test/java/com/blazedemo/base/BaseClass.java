@@ -10,6 +10,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -33,14 +34,14 @@ public class BaseClass {
 	public ExcelDataUtil excel;
 	public ExtentReports report;
 	public ExtentTest test;
+	
 
-	@BeforeMethod
+
+	@BeforeMethod(alwaysRun = true)
 	public void setup(Method method) {
 
 		config = new ConfigReader();
-
 		String browser = config.getBrowser();
-
 		if (browser.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("edge")) {
@@ -52,21 +53,19 @@ public class BaseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 		driver.get(config.getBaseUrl());
-
 		homePage = new HomePage(driver);
 		reservePage = new ReservePage(driver);
 		purchasePage = new PurchasePage(driver);
-		confirmationPage = new ConfirmationPage(driver);		
+		confirmationPage = new ConfirmationPage(driver);
 		report = Reports.getReportInstance();
-
+	
 		System.out.println("Driver initialized and application opened");
-
 		// i found this on chatgpt
 		test = report.createTest(method.getName());
 		System.out.println("Running Test: " + method.getName());
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void tearDown(ITestResult result) {
 
 		if (result.getStatus() == ITestResult.SUCCESS) {
@@ -74,25 +73,20 @@ public class BaseClass {
 		}
 
 		else if (result.getStatus() == ITestResult.FAILURE) {
-
 			String path = Screenshot.captureScreenshot(driver, result.getName());
-
 			test.fail("Test Failed: " + result.getThrowable()).addScreenCaptureFromPath(path);
 		}
 
-		
 		else if (result.getStatus() == ITestResult.SKIP) {
-			test.skip("Test Skipped");		}
-
-		
+			test.skip("Test Skipped");
+		}
 		if (driver != null) {
 			driver.quit();
 		}
 	}
 
-	@AfterTest
+	@AfterTest(alwaysRun = true)
 	public void flushReport() {
-
 		if (report != null) {
 			report.flush();
 			System.out.println("Extent report flushed");

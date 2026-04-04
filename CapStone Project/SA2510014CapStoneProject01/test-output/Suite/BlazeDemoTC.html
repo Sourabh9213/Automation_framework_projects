@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>TestNG:  BlazeDemoTC</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BlazeDemoTC</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Apr 04 11:58:13 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>44 seconds (44420 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>functional smoke </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.blazedemo.tests.PurchasePageTest.TC07_fillBookingDetails()'><b>TC07_fillBookingDetails</b><br>Test class: com.blazedemo.tests.PurchasePageTest<br>Parameters: Boston, New York, Sourabh, Andheri, Mumbai, MH, 400001, Visa, 444544544454, 12.0, 2026.0, Sourabh Patil</td>
+<td></td>
+<td>3</td>
+<td>com.blazedemo.tests.PurchasePageTest@76505305</td></tr>
+<tr>
+<td title='com.blazedemo.tests.ReservePageTest.TC04_selectFirstFlight()'><b>TC04_selectFirstFlight</b><br>Test class: com.blazedemo.tests.ReservePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.blazedemo.tests.ReservePageTest@1bb5a082</td></tr>
+<tr>
+<td title='com.blazedemo.tests.PurchasePageTest.TC07_fillBookingDetails()'><b>TC07_fillBookingDetails</b><br>Test class: com.blazedemo.tests.PurchasePageTest<br>Parameters: Boston, Berlin, Saba , Dadar, Mumbai, MH, 400014, Diner's Club, 515616161, 9.0, 2026.0, Saba Shaikh</td>
+<td></td>
+<td>3</td>
+<td>com.blazedemo.tests.PurchasePageTest@76505305</td></tr>
+<tr>
+<td title='com.blazedemo.tests.HomePageTest.TC01_verifyHomePageLoaded()'><b>TC01_verifyHomePageLoaded</b><br>Test class: com.blazedemo.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.blazedemo.tests.HomePageTest@78691363</td></tr>
+<tr>
+<td title='com.blazedemo.tests.HomePageTest.TC02_verifyCitiesDropdown()'><b>TC02_verifyCitiesDropdown</b><br>Test class: com.blazedemo.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.blazedemo.tests.HomePageTest@78691363</td></tr>
+<tr>
+<td title='com.blazedemo.tests.ReservePageTest.TC06_selectFlightByAirline()'><b>TC06_selectFlightByAirline</b><br>Test class: com.blazedemo.tests.ReservePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.blazedemo.tests.ReservePageTest@1bb5a082</td></tr>
+<tr>
+<td title='com.blazedemo.tests.HomePageTest.TC03_searchFlights()'><b>TC03_searchFlights</b><br>Test class: com.blazedemo.tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>com.blazedemo.tests.HomePageTest@78691363</td></tr>
+<tr>
+<td title='com.blazedemo.tests.PurchasePageTest.TC07_fillBookingDetails()'><b>TC07_fillBookingDetails</b><br>Test class: com.blazedemo.tests.PurchasePageTest<br>Parameters: Philadelphia, London, Akshay, Pune Camp, Pune, MH, 411001, American Express, 8989885, 11.0, 2025.0, Akshay Sagavkar</td>
+<td></td>
+<td>5</td>
+<td>com.blazedemo.tests.PurchasePageTest@76505305</td></tr>
+<tr>
+<td title='com.blazedemo.tests.PurchasePageTest.TC07_fillBookingDetails()'><b>TC07_fillBookingDetails</b><br>Test class: com.blazedemo.tests.PurchasePageTest<br>Parameters: Paris, Rome, Amol , Nashik Road, Nashik, MH, 422001, Visa, 252181851, 10.0, 2027.0, Amol Katkar</td>
+<td></td>
+<td>4</td>
+<td>com.blazedemo.tests.PurchasePageTest@76505305</td></tr>
+<tr>
+<td title='com.blazedemo.tests.ReservePageTest.TC05_selectFlightByIndex()'><b>TC05_selectFlightByIndex</b><br>Test class: com.blazedemo.tests.ReservePageTest</td>
+<td></td>
+<td>1</td>
+<td>com.blazedemo.tests.ReservePageTest@1bb5a082</td></tr>
+</table><p>
+</body>
+</html>

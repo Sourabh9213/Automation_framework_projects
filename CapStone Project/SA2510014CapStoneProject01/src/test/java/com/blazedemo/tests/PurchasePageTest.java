@@ -28,7 +28,7 @@ public class PurchasePageTest extends BaseClass {
 	@Test(dataProvider = "cardData", groups = { "functional", "purchase" }, priority = 7)
 	public void TC07_fillBookingDetails(String fromCity, String toCity, String nameVal, String addVal, String cityVal,
 			String stateVal, String zipVal, String cardTypeVal, String cardNumVal, String MonthVal, String YearVal,
-			String nameOnCardVal) {
+			String nameOnCardVal) throws InterruptedException {
 
 		homePage.selectCities(fromCity, toCity);
 		homePage.clickFindFlights();
@@ -51,5 +51,6 @@ public class PurchasePageTest extends BaseClass {
 		String amount = confirmationPage.getAmount();
 		System.out.println("Your Flight Booked Amount is : " +amount);
 		Assert.assertTrue(amount.contains("USD"), "Amount not displayed correctly");
+		Thread.sleep(1000);
 	}
 }

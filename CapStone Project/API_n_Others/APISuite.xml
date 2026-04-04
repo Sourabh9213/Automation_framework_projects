@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.RESTAssured.TC01_GetPetByStatusTest" />
+			<class name="com.RESTAssured.TC02_CreatePetTest" />
+			<class name="com.RESTAssured.TC03_GetPetByIdTest" />
+			<class name="com.RESTAssured.TC04_UpdatePetTest" />
+			<class name="com.RESTAssured.TC05_DeletePetTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

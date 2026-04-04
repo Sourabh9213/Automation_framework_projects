@@ -10,7 +10,7 @@ import com.blazedemo.utils.Screenshot;
 
 public class HomePageTest extends BaseClass {
 
-	@Test(groups = { "smoke", "homepage" }, priority = 1)
+	@Test(groups = {"smoke","homepage"}, priority = 1)
 	public void TC01_verifyHomePageLoaded() {
 
 		Assert.assertTrue(homePage.isHomePageLoaded(), "Home page not loaded");

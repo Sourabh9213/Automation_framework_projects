@@ -1,42 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [BlazeDemo Suite]">
-  <test thread-count="5" name="Smoke Tests(failed)">
-    <groups>
-      <run>
-        <include name="smoke"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="com.blazedemo.tests.HomePageTest">
-        <methods>
-          <include name="TC02_verifyCitiesDropdown"/>
-          <include name="TC01_verifyHomePageLoaded"/>
-        </methods>
-      </class> <!-- com.blazedemo.tests.HomePageTest -->
-    </classes>
-  </test> <!-- Smoke Tests(failed) -->
-  <test thread-count="5" name="Functional Tests(failed)">
-    <groups>
-      <run>
-        <include name="functional"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="com.blazedemo.tests.ReservePageTest">
-        <methods>
-          <include name="TC06_selectFlightByAirline"/>
-          <include name="TC04_selectFirstFlight"/>
-          <include name="TC05_selectFlightByIndex"/>
-        </methods>
-      </class> <!-- com.blazedemo.tests.ReservePageTest -->
-      <class name="com.blazedemo.tests.PurchasePageTest">
-        <methods>
-          <include name="TC07_fillBookingDetails" invocation-numbers="0 1 2 3"/>
-        </methods>
-      </class> <!-- com.blazedemo.tests.PurchasePageTest -->
-    </classes>
-  </test> <!-- Functional Tests(failed) -->
   <test thread-count="5" name="Negative Tests(failed)">
     <groups>
       <run>
@@ -46,9 +10,10 @@
     <classes>
       <class name="com.blazedemo.tests.NegativeTest">
         <methods>
-          <include name="TC08_blankFormSubmission"/>
+          <include name="flushReport"/>
           <include name="TC10_sameCitySelection"/>
-          <include name="TC09_invalidCardDetails"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.blazedemo.tests.NegativeTest -->
     </classes>

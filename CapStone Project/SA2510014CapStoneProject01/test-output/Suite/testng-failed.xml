@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="classes" name="Failed suite [Suite]">
-  <test thread-count="5" parallel="classes" name="Test(failed)">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="BlazeDemoTC(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="functional"/>
+        <include name="smoke"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.blazedemo.tests.NegativeTest">
+      <class name="com.blazedemo.tests.PurchasePageTest">
         <methods>
           <include name="flushReport"/>
-          <include name="TC10_sameCitySelection"/>
           <include name="setup"/>
+          <include name="TC07_fillBookingDetails"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.blazedemo.tests.NegativeTest -->
+      </class> <!-- com.blazedemo.tests.PurchasePageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- BlazeDemoTC(failed) -->
 </suite> <!-- Failed suite [Suite] -->

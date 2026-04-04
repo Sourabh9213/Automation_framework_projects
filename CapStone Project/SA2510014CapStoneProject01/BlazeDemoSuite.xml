@@ -1,17 +1,21 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
 
 <suite name="Suite">
-	<test name="smoke TestD ">
+	<test thread-count="5" name="BlazeDemoTC">
+
 		<groups>
 			<run>
-				<include name="negative"></include>				
+				<include name="smoke" />
+				<include name="functional" />
+				<include name="smoke" />
 			</run>
 		</groups>
+
 		<classes>
-			<class name="com.blazedemo.tests.HomePageTest" />
-			<class name="com.blazedemo.tests.ReservePageTest" />
 			<class name="com.blazedemo.tests.PurchasePageTest" />
+			<class name="com.blazedemo.tests.ReservePageTest" />
+			<class name="com.blazedemo.tests.HomePageTest" />
 			<class name="com.blazedemo.tests.NegativeTest" />
 		</classes>
-	</test>
-</suite>
+	</test> <!-- BlazeDemoTC -->
+</suite> <!-- Suite -->
