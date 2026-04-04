@@ -13,9 +13,7 @@ public class CartTests extends BaseTest {
 	public void TC04_addSingleItem() {
 
 		loginPage.login(config.validUser(), config.validPass());
-
 		productPage.addProductToCart("iPhone 12");
-
 		Assert.assertEquals(productPage.getCartCount(), 1, "Item was not added to the cart.");
 
 	}

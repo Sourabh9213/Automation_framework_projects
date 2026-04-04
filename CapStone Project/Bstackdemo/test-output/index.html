@@ -168,12 +168,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BstackDemo_Suite" title="com.Bstackdemo.tests.CheckoutTests" class="method navigator-link" hash-for-method="TC10_checkoutWithoutItems">TC10_checkoutWithoutItems</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-BstackDemo_Suite" title="com.Bstackdemo.tests.LoginTests" class="method navigator-link" hash-for-method="TC10_checkoutWithoutItems">TC10_checkoutWithoutItems</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-BstackDemo_Suite" title="com.Bstackdemo.tests.LoginTests" class="method navigator-link" hash-for-method="TC10_checkoutWithoutItems">TC10_checkoutWithoutItems</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-BstackDemo_Suite" title="com.Bstackdemo.tests.CheckoutTests" class="method navigator-link" hash-for-method="TC10_checkoutWithoutItems">TC10_checkoutWithoutItems</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-BstackDemo_Suite -->
@@ -206,49 +206,6 @@
                   <a name="TC10_checkoutWithoutItems">
                   </a> <!-- TC10_checkoutWithoutItems -->
                   <span class="method-name">TC10_checkoutWithoutItems</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-BstackDemo_Suite-class-passed -->
-          <div class="suite-BstackDemo_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.Bstackdemo.tests.CartTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC04_addSingleItem">
-                  </a> <!-- TC04_addSingleItem -->
-                  <span class="method-name">TC04_addSingleItem</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC05_searchBox">
-                  </a> <!-- TC05_searchBox -->
-                  <span class="method-name">TC05_searchBox</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC06_addMultipleItems">
-                  </a> <!-- TC06_addMultipleItems -->
-                  <span class="method-name">TC06_addMultipleItems</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC07_removeItem">
-                  </a> <!-- TC07_removeItem -->
-                  <span class="method-name">TC07_removeItem</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC08_verifyCartItems">
-                  </a> <!-- TC08_verifyCartItems -->
-                  <span class="method-name">TC08_verifyCartItems</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -317,6 +274,49 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-BstackDemo_Suite-class-passed -->
+          <div class="suite-BstackDemo_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Bstackdemo.tests.CartTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC04_addSingleItem">
+                  </a> <!-- TC04_addSingleItem -->
+                  <span class="method-name">TC04_addSingleItem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC05_searchBox">
+                  </a> <!-- TC05_searchBox -->
+                  <span class="method-name">TC05_searchBox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC06_addMultipleItems">
+                  </a> <!-- TC06_addMultipleItems -->
+                  <span class="method-name">TC06_addMultipleItems</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC07_removeItem">
+                  </a> <!-- TC07_removeItem -->
+                  <span class="method-name">TC07_removeItem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC08_verifyCartItems">
+                  </a> <!-- TC08_verifyCartItems -->
+                  <span class="method-name">TC08_verifyCartItems</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BstackDemo_Suite-class-passed -->
         </div> <!-- panel BstackDemo_Suite -->
         <div panel-name="test-xml-BstackDemo_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -326,8 +326,16 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;BstackDemo Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Test&quot;&gt;
+&lt;suite name=&quot;BstackDemo Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;smoke&quot;/&gt;
+        &lt;include name=&quot;functional&quot;/&gt;
+        &lt;include name=&quot;negative&quot;/&gt;
+        &lt;include name=&quot;negative&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.Bstackdemo.tests.CheckoutTests&quot;/&gt;
       &lt;class name=&quot;com.Bstackdemo.tests.CartTests&quot;/&gt;
@@ -482,69 +490,69 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(15);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC07_removeItem')
-data.setCell(0, 2, 'com.Bstackdemo.tests.LoginTests')
-data.setCell(0, 3, 11351);
+data.setCell(0, 2, 'com.Bstackdemo.tests.CartTests')
+data.setCell(0, 3, 12518);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TC07_removeItem')
-data.setCell(1, 2, 'com.Bstackdemo.tests.CartTests')
-data.setCell(1, 3, 11327);
+data.setCell(1, 2, 'com.Bstackdemo.tests.LoginTests')
+data.setCell(1, 3, 11295);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC09_validCheckout')
-data.setCell(2, 2, 'com.Bstackdemo.tests.CheckoutTests')
-data.setCell(2, 3, 1914);
+data.setCell(2, 1, 'TC08_validCheckout')
+data.setCell(2, 2, 'com.Bstackdemo.tests.LoginTests')
+data.setCell(2, 3, 2493);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC08_validCheckout')
+data.setCell(3, 1, 'TC04_addSingleItem')
 data.setCell(3, 2, 'com.Bstackdemo.tests.LoginTests')
-data.setCell(3, 3, 1792);
+data.setCell(3, 3, 1934);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC06_addMultipleItems')
-data.setCell(4, 2, 'com.Bstackdemo.tests.LoginTests')
-data.setCell(4, 3, 1351);
+data.setCell(4, 1, 'TC09_validCheckout')
+data.setCell(4, 2, 'com.Bstackdemo.tests.CheckoutTests')
+data.setCell(4, 3, 1855);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'TC06_addMultipleItems')
 data.setCell(5, 2, 'com.Bstackdemo.tests.CartTests')
-data.setCell(5, 3, 1325);
+data.setCell(5, 3, 1696);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TC04_addSingleItem')
-data.setCell(6, 2, 'com.Bstackdemo.tests.CartTests')
-data.setCell(6, 3, 1307);
+data.setCell(6, 1, 'TC06_addMultipleItems')
+data.setCell(6, 2, 'com.Bstackdemo.tests.LoginTests')
+data.setCell(6, 3, 1340);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC10_checkoutWithoutItems')
-data.setCell(7, 2, 'com.Bstackdemo.tests.LoginTests')
-data.setCell(7, 3, 1298);
+data.setCell(7, 1, 'TC04_addSingleItem')
+data.setCell(7, 2, 'com.Bstackdemo.tests.CartTests')
+data.setCell(7, 3, 1296);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'TC10_checkoutWithoutItems')
 data.setCell(8, 2, 'com.Bstackdemo.tests.CheckoutTests')
-data.setCell(8, 3, 1288);
+data.setCell(8, 3, 1276);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TC04_addSingleItem')
+data.setCell(9, 1, 'TC10_checkoutWithoutItems')
 data.setCell(9, 2, 'com.Bstackdemo.tests.LoginTests')
-data.setCell(9, 3, 1269);
+data.setCell(9, 3, 1273);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'TC05_searchBox')
 data.setCell(10, 2, 'com.Bstackdemo.tests.LoginTests')
-data.setCell(10, 3, 958);
+data.setCell(10, 3, 905);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'TC05_searchBox')
+data.setCell(11, 1, 'TC08_verifyCartItems')
 data.setCell(11, 2, 'com.Bstackdemo.tests.CartTests')
-data.setCell(11, 3, 825);
+data.setCell(11, 3, 891);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'TC08_verifyCartItems')
+data.setCell(12, 1, 'TC05_searchBox')
 data.setCell(12, 2, 'com.Bstackdemo.tests.CartTests')
-data.setCell(12, 3, 815);
+data.setCell(12, 3, 879);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'TC09_verifyCartItems')
 data.setCell(13, 2, 'com.Bstackdemo.tests.LoginTests')
-data.setCell(13, 3, 802);
+data.setCell(13, 3, 727);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'TC01_validLogin')
 data.setCell(14, 2, 'com.Bstackdemo.tests.LoginTests')
-data.setCell(14, 3, 714);
+data.setCell(14, 3, 705);
 window.suiteTableData['BstackDemo_Suite']= { tableData: data, tableDiv: 'times-div-BstackDemo_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 41 seconds</span>
               <div id="times-div-BstackDemo_Suite">
               </div> <!-- times-div-BstackDemo_Suite -->
             </div> <!-- times-div -->
@@ -581,190 +589,190 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.Bstackdemo.tests.CheckoutTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup(org.testng.TestRunner@68034211)</span>
+                <span class="method-name">setup(org.testng.TestRunner@14292d71)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC09_validCheckout</span>
-                <span class="method-start">6351 ms</span>
+                <span class="method-start">3374 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">8267 ms</span>
+                <span class="method-start">5229 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(org.testng.TestRunner@68034211)</span>
-                <span class="method-start">8395 ms</span>
+                <span class="method-name">setup(org.testng.TestRunner@14292d71)</span>
+                <span class="method-start">5341 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC10_checkoutWithoutItems</span>
-                <span class="method-start">12781 ms</span>
+                <span class="method-start">8444 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">14071 ms</span>
+                <span class="method-start">9724 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.Bstackdemo.tests.CartTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup(org.testng.TestRunner@68034211)</span>
-                <span class="method-start">14167 ms</span>
+                <span class="method-name">setup(org.testng.TestRunner@14292d71)</span>
+                <span class="method-start">9805 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC04_addSingleItem</span>
-                <span class="method-start">18880 ms</span>
+                <span class="method-start">13826 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">20188 ms</span>
+                <span class="method-start">15122 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(org.testng.TestRunner@68034211)</span>
-                <span class="method-start">20291 ms</span>
+                <span class="method-name">setup(org.testng.TestRunner@14292d71)</span>
+                <span class="method-start">15206 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC05_searchBox</span>
-                <span class="method-start">24640 ms</span>
+                <span class="method-start">18203 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">25466 ms</span>
+                <span class="method-start">19083 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(org.testng.TestRunner@68034211)</span>
-                <span class="method-start">25565 ms</span>
+                <span class="method-name">setup(org.testng.TestRunner@14292d71)</span>
+                <span class="method-start">19172 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC06_addMultipleItems</span>
-                <span class="method-start">29618 ms</span>
+                <span class="method-start">24023 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">30944 ms</span>
+                <span class="method-start">25719 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(org.testng.TestRunner@68034211)</span>
-                <span class="method-start">31048 ms</span>
+                <span class="method-name">setup(org.testng.TestRunner@14292d71)</span>
+                <span class="method-start">25836 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC07_removeItem</span>
-                <span class="method-start">35731 ms</span>
+                <span class="method-start">28940 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">47059 ms</span>
+                <span class="method-start">41458 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(org.testng.TestRunner@68034211)</span>
-                <span class="method-start">47181 ms</span>
+                <span class="method-name">setup(org.testng.TestRunner@14292d71)</span>
+                <span class="method-start">41569 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC08_verifyCartItems</span>
-                <span class="method-start">50467 ms</span>
+                <span class="method-start">48520 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">51283 ms</span>
+                <span class="method-start">49411 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.Bstackdemo.tests.LoginTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup(org.testng.TestRunner@68034211)</span>
-                <span class="method-start">51367 ms</span>
+                <span class="method-name">setup(org.testng.TestRunner@14292d71)</span>
+                <span class="method-start">49540 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC01_validLogin</span>
-                <span class="method-start">56138 ms</span>
+                <span class="method-start">52597 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">56853 ms</span>
+                <span class="method-start">53303 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(org.testng.TestRunner@68034211)</span>
-                <span class="method-start">56943 ms</span>
+                <span class="method-name">setup(org.testng.TestRunner@14292d71)</span>
+                <span class="method-start">53385 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC04_addSingleItem</span>
-                <span class="method-start">61734 ms</span>
+                <span class="method-start">56302 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">63004 ms</span>
+                <span class="method-start">58236 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(org.testng.TestRunner@68034211)</span>
-                <span class="method-start">63122 ms</span>
+                <span class="method-name">setup(org.testng.TestRunner@14292d71)</span>
+                <span class="method-start">58347 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC05_searchBox</span>
-                <span class="method-start">66984 ms</span>
+                <span class="method-start">61291 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">67942 ms</span>
+                <span class="method-start">62197 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(org.testng.TestRunner@68034211)</span>
-                <span class="method-start">68036 ms</span>
+                <span class="method-name">setup(org.testng.TestRunner@14292d71)</span>
+                <span class="method-start">62281 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC06_addMultipleItems</span>
-                <span class="method-start">71238 ms</span>
+                <span class="method-start">65552 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">72591 ms</span>
+                <span class="method-start">66892 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(org.testng.TestRunner@68034211)</span>
-                <span class="method-start">72697 ms</span>
+                <span class="method-name">setup(org.testng.TestRunner@14292d71)</span>
+                <span class="method-start">67002 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC07_removeItem</span>
-                <span class="method-start">76813 ms</span>
+                <span class="method-start">70106 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">88164 ms</span>
+                <span class="method-start">81401 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(org.testng.TestRunner@68034211)</span>
-                <span class="method-start">88297 ms</span>
+                <span class="method-name">setup(org.testng.TestRunner@14292d71)</span>
+                <span class="method-start">81496 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC08_validCheckout</span>
-                <span class="method-start">93502 ms</span>
+                <span class="method-start">89299 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">95294 ms</span>
+                <span class="method-start">91792 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(org.testng.TestRunner@68034211)</span>
-                <span class="method-start">95382 ms</span>
+                <span class="method-name">setup(org.testng.TestRunner@14292d71)</span>
+                <span class="method-start">91916 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC09_verifyCartItems</span>
-                <span class="method-start">99462 ms</span>
+                <span class="method-start">95444 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">100271 ms</span>
+                <span class="method-start">96171 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setup(org.testng.TestRunner@68034211)</span>
-                <span class="method-start">100352 ms</span>
+                <span class="method-name">setup(org.testng.TestRunner@14292d71)</span>
+                <span class="method-start">96250 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC10_checkoutWithoutItems</span>
-                <span class="method-start">105403 ms</span>
+                <span class="method-start">99467 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">106702 ms</span>
+                <span class="method-start">100740 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,29 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [BstackDemo Suite]">
-  <test thread-count="2" parallel="tests" name="Test(failed)">
+<suite name="Failed suite [BstackDemo Suite]">
+  <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
         <include name="smoke"/>
-        <include name="regression"/>
       </run>
     </groups>
     <classes>
-      <class name="com.Bstackdemo.tests.CartTests">
-        <methods>
-          <include name="TC05_searchBox"/>
-          <include name="TC04_addSingleItem"/>
-          <include name="TC06_addMultipleItems"/>
-          <include name="TC08_verifyCartItems"/>
-        </methods>
-      </class> <!-- com.Bstackdemo.tests.CartTests -->
       <class name="com.Bstackdemo.tests.LoginTests">
         <methods>
           <include name="TC01_validLogin"/>
-          <include name="TC09_verifyCartItems"/>
-          <include name="TC04_addSingleItem"/>
-          <include name="TC05_searchBox"/>
-          <include name="TC06_addMultipleItems"/>
         </methods>
       </class> <!-- com.Bstackdemo.tests.LoginTests -->
     </classes>

@@ -5,7 +5,6 @@
 	<groupId>SA2510014CapStoneProject02</groupId>
 	<artifactId>Bstackdemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
 	<dependencies>
 		<!-- Source:
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -15,7 +14,6 @@
 			<version>4.41.0</version>
 			<scope>compile</scope>
 		</dependency>
-
 		<!-- Source: https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -23,7 +21,6 @@
 			<version>7.11.0</version>
 			<scope>test</scope>
 		</dependency>
-
 		<!-- Source: https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
@@ -31,7 +28,6 @@
 			<version>5.2.5</version>
 			<scope>compile</scope>
 		</dependency>
-
 		<!-- Source:
 		https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 		<dependency>
@@ -40,13 +36,10 @@
 			<version>5.1.2</version>
 			<scope>compile</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>2.15.1</version>
 		</dependency>
-		
-
 	</dependencies>
 </project>

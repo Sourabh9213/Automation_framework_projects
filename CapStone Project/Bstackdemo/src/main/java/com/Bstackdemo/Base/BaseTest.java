@@ -23,7 +23,7 @@ public class BaseTest {
 	public CartPage cartPage;
 	public CheckoutPage checkoutPage;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setup(ITestContext context) {
 
 		config = new ConfigReader();
@@ -33,10 +33,8 @@ public class BaseTest {
 
 		driver.get(config.getBaseUrl());
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));		
 		context.setAttribute("driver", driver);
-
 		loginPage = new LoginPage(driver);
 		productPage = new ProductPage(driver);
 		cartPage = new CartPage(driver);
@@ -44,7 +42,7 @@ public class BaseTest {
 		System.out.println("Browser Launched: " + config.getBrowser());
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void teardown() {
 		if (driver != null) {
 			driver.quit();

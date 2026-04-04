@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="BstackDemo Suite" >
+<suite name="BstackDemo Suite">
 	<test thread-count="5" name="Test">
-		
+
+		<groups>
+			<run>
+				<include name="smoke" />
+				<include name="functional" />
+				<include name="negative" />
+				<include name="negative" />
+
+			</run>
+		</groups>
 
 		<classes>
 			<class name="com.Bstackdemo.tests.CheckoutTests" />

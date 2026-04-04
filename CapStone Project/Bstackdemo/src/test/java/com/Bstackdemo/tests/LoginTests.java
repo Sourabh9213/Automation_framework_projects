@@ -7,9 +7,9 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Bstackdemo.Base.BaseTest;
-import com.Bstackdemo.reports.TestListener;
+import com.Bstackdemo.reports.AutomationReports;
 
-@Listeners({ TestListener.class })
+@Listeners({ AutomationReports.class })
 public class LoginTests extends BaseTest {
 
 	@Test(groups = { "smoke", "login", "regression" })
@@ -98,8 +98,7 @@ public class LoginTests extends BaseTest {
 		productPage.addProductToCart("iPhone 12");
 		productPage.addProductToCart("iPhone 12 Mini");
 		int actual = cartPage.getCartItemCount();
-		Assert.assertEquals(actual, 2, 
-		    "Cart item count mismatch. Expected 2 but found " + actual);
+		Assert.assertEquals(actual, 2, "Cart item count mismatch. Expected 2 but found " + actual);
 	}
 
 	@Test(groups = "negative")
