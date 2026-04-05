@@ -7,9 +7,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.apache.commons.io.FileUtils;
 
-import com.Bstackdemo.Base.BaseTest;
 
-public class ScreenshotUtil extends BaseTest {
+
+public class ScreenshotUtil   {
 
     public static String captureScreenshot(WebDriver driver,  String testName) throws IOException {
 

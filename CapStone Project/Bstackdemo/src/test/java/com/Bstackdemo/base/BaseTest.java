@@ -1,4 +1,4 @@
-package com.Bstackdemo.Base;
+package com.Bstackdemo.base;
 
 import java.time.Duration;
 
@@ -14,10 +14,11 @@ import com.Bstackdemo.pages.CheckoutPage;
 import com.Bstackdemo.pages.LoginPage;
 import com.Bstackdemo.pages.ProductPage;
 
+
 public class BaseTest {
 
 	protected WebDriver driver;
-	protected ConfigReader config;
+	public ConfigReader config;
 	public LoginPage loginPage;
 	public ProductPage productPage;
 	public CartPage cartPage;
@@ -33,7 +34,7 @@ public class BaseTest {
 
 		driver.get(config.getBaseUrl());
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		context.setAttribute("driver", driver);
 		loginPage = new LoginPage(driver);
 		productPage = new ProductPage(driver);
@@ -47,6 +48,5 @@ public class BaseTest {
 		if (driver != null) {
 			driver.quit();
 		}
-
 	}
 }

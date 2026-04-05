@@ -3,7 +3,9 @@ package com.Bstackdemo.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.Bstackdemo.Base.BaseTest;
+import com.Bstackdemo.base.BaseTest;
+
+
 
 public class CheckoutTests extends BaseTest {
 

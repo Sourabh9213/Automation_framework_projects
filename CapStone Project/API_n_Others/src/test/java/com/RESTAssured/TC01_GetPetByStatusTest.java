@@ -1,11 +1,14 @@
 package com.RESTAssured;
 
 import static io.restassured.RestAssured.*;
+import io.restassured.response.Response;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import io.restassured.response.Response;
+
+
+
 
 public class TC01_GetPetByStatusTest {
 	@Test

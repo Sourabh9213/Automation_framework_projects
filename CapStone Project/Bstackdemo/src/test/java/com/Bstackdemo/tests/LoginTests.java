@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.Bstackdemo.Base.BaseTest;
+import com.Bstackdemo.base.BaseTest;
 import com.Bstackdemo.reports.AutomationReports;
 
 @Listeners({ AutomationReports.class })

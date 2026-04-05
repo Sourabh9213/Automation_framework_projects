@@ -6,7 +6,9 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.Bstackdemo.Utils.ScreenshotUtil;
-import com.aventstack.extentreports.*;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+
 
 public class AutomationReports implements ITestListener {
 

@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="BstackDemo Suite">
-	<test thread-count="5" name="Test">
-
-		<groups>
-			<run>
-				<include name="smoke" />
-				<include name="functional" />
-				<include name="negative" />
-				<include name="negative" />
-
-			</run>
-		</groups>
-
-		<classes>
-			<class name="com.Bstackdemo.tests.CheckoutTests" />
-			<class name="com.Bstackdemo.tests.CartTests" />
-			<class name="com.Bstackdemo.tests.LoginTests" />
-		</classes>
-	</test> <!-- Test -->
+<suite name="Suite">
+  <test thread-count="5" name="BstackDemo">
+    <classes>
+      <class name="com.Bstackdemo.tests.CheckoutTests"/>
+      <class name="com.Bstackdemo.tests.CartTests"/>
+      <class name="com.Bstackdemo.tests.LoginTests"/>
+    </classes>
+  </test> <!-- BstackDemo -->
 </suite> <!-- Suite -->
