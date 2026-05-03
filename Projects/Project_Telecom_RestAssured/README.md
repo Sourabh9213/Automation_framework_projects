@@ -83,7 +83,7 @@ This project demonstrates real-world API automation with authentication and CRUD
 ---
 
 ## 👨‍💻 Author
-Sourabh Matade
+Sourabh 
 
 ## 🤖 AI Assistance
 AI tools were used for guidance in understanding concepts, improving code structure, and enhancing documentation.  
